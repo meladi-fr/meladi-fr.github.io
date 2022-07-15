@@ -8,9 +8,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		index.html = index.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{E37807BC-0953-415D-8BDD-9109E824898A}"
+	ProjectSection(SolutionItems) = preProject
+		Images\github.png = Images\github.png
+		Images\hawaii.jpg = Images\hawaii.jpg
+		Images\holbrook.jpg = Images\holbrook.jpg
+		Images\linkedin.png = Images\linkedin.png
+		Images\logo.png = Images\logo.png
+		Images\moab.jpg = Images\moab.jpg
+		Images\ocean.jpg = Images\ocean.jpg
+		Images\PORTRAIT.png = Images\PORTRAIT.png
+		Images\seward.jpg = Images\seward.jpg
+		Images\stgeorge.jpg = Images\stgeorge.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E37807BC-0953-415D-8BDD-9109E824898A} = {4F47451E-7E0B-4ADE-B57D-A6A6A235BE72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B34ADA34-B1EB-4DA1-833F-4BF652FD172F}
