@@ -6,8 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F47451E-7E0B-4ADE-B57D-A6A6A235BE72}"
 	ProjectSection(SolutionItems) = preProject
 		index.html = index.html
+		navbar.html = navbar.html
 		Unit2Form.html = Unit2Form.html
 		Unit3Form.html = Unit3Form.html
+		Unit4Form.html = Unit4Form.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{E37807BC-0953-415D-8BDD-9109E824898A}"
