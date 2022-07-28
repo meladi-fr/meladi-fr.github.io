@@ -12,43 +12,24 @@
             z-index: 999;
         }
     </style>
+    <!-- load navbar.html for identical navbar across all pages -->
+    <script type="text/javascript">
+        window.onload = function () {
+            $.get("navbar.html", function (data) {
+                $("#common-navbar").html(data);
+                $('.navbar-nav').find('li:nth-child(2)')
+                    .addClass('active')
+                    .find('a').append('<span class="sr-only"></span>');
+            });
+        }
+    </script>
+
 </head>
-<body>
-    <!-- Navigation bar at top for easy navigation and social media links -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-muted fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="Images\logo.png" height="40" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Weekly Exercises</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Unit2Form.html">Unit 2 Form</a></li>
-                            <li><a class="dropdown-item" href="Unit3Form.html">Unit 3 Form</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/meladi-fr">
-                            <img src="Images\github.png" height="30" />
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/mfrankovich/">
-                            <img src="Images\linkedin.png" height="30" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body style="background-color: white">
+    <!-- navbar -->
+    <div id="common-navbar"></div>
+    <!-- end navbar -->
+
     <div id="liveAlertPlaceholder" style="padding-top:65px"></div>
     <div style="padding: 25px;">
         <div class="row">
