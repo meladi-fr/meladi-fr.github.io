@@ -14,15 +14,10 @@
         }
     </style>
     <!-- load navbar.html for identical navbar across all pages -->
-    <script type="text/javascript">
-        window.onload = function () {
-            $.get("navbar.html", function (data) {
-                $("#common-navbar").html(data);
-                $('.navbar-nav').find('li:nth-child(2)')
-                    .addClass('active')
-                    .find('a').append('<span class="sr-only"></span>');
-            });
-        }
+    <script>
+        $(function () {
+            $("#common-navbar").load("navbar.html");
+        });
     </script>
 
 </head>
